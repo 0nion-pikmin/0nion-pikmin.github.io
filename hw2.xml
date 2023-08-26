@@ -3,8 +3,7 @@
 	 Ampersand: &amp;
 -->
 <!-- Books are being donated by instructors and publishers -->
-
-<h1> List of Books </h1> <!-- Need to center this -->
+<!-- List of Books -->
 
 <books>
 <book category="science fiction">
