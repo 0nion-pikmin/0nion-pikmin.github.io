@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright symbol: &copy;
+	 Ampersand: &amp;
+-->
+<!-- Books are being donated by instructors and publishers -->
+
+<h1> List of Books </h1> <!-- Need to center this -->
+
+<books>
+<book category="science fiction">
+	<name language="en"> Introduction to HTML </name>
+	<author> Joseph Gardner </author>
+	<publisher>Press &copy;</publisher>
+</book>
+<book category="science fiction">
+	<name language="en">Networking Infrastructure</name>
+	<author>Adam Douglas &amp; Janice Dall</author>
+	<publisher>Cengage;&copy;</publisher>
+</book>
+<book category="romance">
+	<name language="en">Soft Skills in IT</name>
+	<author>Mark Hunter</author>
+	<publisher>Bolding Publisher&copy;</publisher>
+</book>
+<book category="children">
+	<name language="en">Network Security</name>
+	<author>Jennifer Starter &amp; Yuri Adantov</author>
+	<publisher>Wrox&copy;</publisher>
+</book>
+<book category="children">
+	<name language="en">XML &amp; JSON</name>
+	<author>Stuart Bell</author>
+	<publisher>Cengage;&copy;</publisher>
+</book>
+</books>
