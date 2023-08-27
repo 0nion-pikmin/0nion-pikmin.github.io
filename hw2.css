@@ -9,7 +9,7 @@ intro-line {
   font-size:18px;
 }
 
-Books { 
+books { 
     display:table; 
     font-size:18px; 
     margin:8px; 
@@ -17,7 +17,7 @@ Books {
     width: 100%;
 } 
 
-Book{ 
+book{ 
     display:table-row; 
     border: 1px solid silver; 
     padding:10px; 
@@ -25,7 +25,7 @@ Book{
 } 
 
 /* 3 Columns' name*/
-Book:nth-child(1) {
+book:nth-child(1) {
     display:table-row; 
     text-align:center; 
     border: 1px solid silver; 
@@ -35,7 +35,7 @@ Book:nth-child(1) {
 }
 
 /* Odd book entries have lightblue bgr */
-Book:nth-child(odd) {
+book:nth-child(odd) {
   background-color: lightskyblue;
 }
 
