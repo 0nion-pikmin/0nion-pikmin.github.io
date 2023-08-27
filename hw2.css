@@ -1,0 +1,36 @@
+/*
+The whole XML document: light gray background color
+The title of the books: In bold and red color
+Each odd book (1st, 3rd, 5th, etc.): presented with a different background color (for example, light blue)
+TIP: you can use the nth-child() pseudo classLinks to an external site. to make those alternate rows have a different background color
+Each book should be presented one below the other
+TIP: remember that to make an inline HTML element to be presented by itself, in its own line, you would use the display: block CSS
+*/
+
+body {
+  background-color: lightgray;
+}
+/*
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+*/
+
+parent {
+ font-family : Arial Black;
+ font-weight: bold;
+ color : red;
+ <!-- 
+ border : solid 5px;
+ width : 300px;
+ --> 
+}
+
+/* Odd book entries have lightblue bgr */
+li:nth-child(odd) {
+  background-color: lightskyblue;
+}
+
