@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw2.css" ?>
-
-<!-- Copyright symbol: &copy;
+<!-- Copyright symbol: &#169;
 	 Ampersand: &amp;
 -->
 <!-- Books are being donated by instructors and publishers -->
@@ -11,26 +10,26 @@
 <book category="science fiction">
 	<name language="en"> Introduction to HTML </name>
 	<author> Joseph Gardner </author>
-	<publisher>Press &copy;</publisher>
+	<publisher>Press &#169;</publisher>
 </book>
 <book category="science fiction">
 	<name language="en">Networking Infrastructure</name>
 	<author>Adam Douglas &amp; Janice Dall</author>
-	<publisher>Cengage;&copy;</publisher>
+	<publisher>Cengage;&#169;</publisher>
 </book>
 <book category="romance">
 	<name language="en">Soft Skills in IT</name>
 	<author>Mark Hunter</author>
-	<publisher>Bolding Publisher&copy;</publisher>
+	<publisher>Bolding Publisher&#169;</publisher>
 </book>
 <book category="children">
 	<name language="en">Network Security</name>
 	<author>Jennifer Starter &amp; Yuri Adantov</author>
-	<publisher>Wrox&copy;</publisher>
+	<publisher>Wrox&#169;</publisher>
 </book>
 <book category="children">
 	<name language="en">XML &amp; JSON</name>
 	<author>Stuart Bell</author>
-	<publisher>Cengage;&copy;</publisher>
+	<publisher>Cengage;&#169;</publisher>
 </book>
 </books>
