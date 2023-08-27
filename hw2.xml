@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw2.css" ?>
 <!-- Copyright symbol: &#169;
-	 Ampersand: &amp;
+	 Ampersand: &#38;
 -->
 <!-- Books are being donated by instructors and publishers -->
 <!-- List of Books -->
@@ -14,7 +14,7 @@
 </book>
 <book category="science fiction">
 	<name language="en">Networking Infrastructure</name>
-	<author>Adam Douglas &amp; Janice Dall</author>
+	<author>Adam Douglas &#38; Janice Dall</author>
 	<publisher>Cengage;&#169;</publisher>
 </book>
 <book category="romance">
@@ -24,11 +24,11 @@
 </book>
 <book category="children">
 	<name language="en">Network Security</name>
-	<author>Jennifer Starter &amp; Yuri Adantov</author>
+	<author>Jennifer Starter &#38; Yuri Adantov</author>
 	<publisher>Wrox&#169;</publisher>
 </book>
 <book category="children">
-	<name language="en">XML &amp; JSON</name>
+	<name language="en">XML &#38; JSON</name>
 	<author>Stuart Bell</author>
 	<publisher>Cengage;&#169;</publisher>
 </book>
