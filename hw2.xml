@@ -10,11 +10,11 @@
 <books>
 
 <!-- 3 Columns' name -->
-<column>
+<book>
 	<name language="en"> Title </name>
 	<author> Author </author>
 	<publisher>Publisher</publisher>
-</column>
+</book>
 
 <!-- Books' data -->
 <book page-num="112 pages">
