@@ -7,8 +7,10 @@
 <!--intro-line> List of Books </intro-line -->
 
 <books>
+    <blank> </blank>
     <intro-line> List of Books </intro-line>
-
+    <blank> </blank>
+    
     <!-- 3 Columns' name -->
     <book>
         <name language="en"> Title </name>

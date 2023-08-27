@@ -2,13 +2,6 @@ body {
   background-color: lightgray;
 }
 
-intro-line {
-  display:block;
-  text-align: center; 
-  font-family: "Gill Sans", sans-serif;
-  font-size:18px;
-}
-
 books { 
     display:table; 
     font-size:18px; 
@@ -16,6 +9,13 @@ books {
     font-family: Georgia, serif; 
     width: 100%;
 } 
+
+blank, intro-line {
+  display:table-cell; 
+  text-align:center; 
+  font-family: "Gill Sans", sans-serif;
+  font-size:22px;
+}
 
 book{ 
     display:table-row; 
@@ -39,7 +39,7 @@ book:nth-child(odd) {
   background-color: lightskyblue;
 }
 
-name, author, publisher { 
+name, author, publisher{ 
     display: table-cell; 
     border: solid 1px; 
     width: 25%;
