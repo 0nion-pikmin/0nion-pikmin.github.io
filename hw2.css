@@ -1,42 +1,52 @@
-/*
-The whole XML document: light gray background color
-The title of the books: In bold and red color
-Each odd book (1st, 3rd, 5th, etc.): presented with a different background color (for example, light blue)
-TIP: you can use the nth-child() pseudo classLinks to an external site. to make those alternate rows have a different background color
-Each book should be presented one below the other
-TIP: remember that to make an inline HTML element to be presented by itself, in its own line, you would use the display: block CSS
-*/
-
-books { display: table; }
-book { 
-	display: table-cell; 
-	border: solid 1px;
-}
-
 body {
   background-color: lightgray;
 }
-/*
-h1 {
-  color: blue;
-}
-p {
-  color: red;
-}
-*/
 
-parent {
- font-family : "Arial Black";
- font-weight: bold;
- color : red;
- /*
- border : solid 5px;
- width : 300px;
- */
+intro-line {
+  display:block;
+  text-align: center; 
+  font-family: "Gill Sans", sans-serif;
+  font-size:18px;
 }
+
+Books { 
+    display:table; 
+    font-size:18px; 
+    margin:8px; 
+    font-family: Georgia, serif; 
+    width: 100%;
+} 
+
+/* 3 Columns' name*/
+Column {
+    display:table-row; 
+    text-align:center; 
+    border: 1px solid silver; 
+    padding:10px; 
+    font-weight: bold;
+    background-color:whitesmoke; 
+}
+
+Book{ 
+    display:table-row; 
+    border: 1px solid silver; 
+    padding:10px; 
+    background-color:whitesmoke; 
+} 
 
 /* Odd book entries have lightblue bgr */
-li:nth-child(odd) {
+Book:nth-child(odd) {
   background-color: lightskyblue;
 }
 
+name, author, publisher { 
+    display: table-cell; 
+    border: solid 1px; 
+    width: 25%;
+}
+
+name {
+  font-weight: bold;
+  color: red;
+  border: 1px solid black;
+}
