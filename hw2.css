@@ -20,13 +20,13 @@ p {
 */
 
 parent {
- font-family : Arial Black;
+ font-family : "Arial Black";
  font-weight: bold;
  color : red;
- <!-- 
+ /*
  border : solid 5px;
  width : 300px;
- --> 
+ */
 }
 
 /* Odd book entries have lightblue bgr */
