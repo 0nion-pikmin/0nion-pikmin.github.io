@@ -4,7 +4,8 @@
 	 Ampersand: &#38;
 -->
 <!-- Books are being donated by instructors and publishers -->
-<intro-line> List of Books </intro-line>
+<!--intro-line> List of Books </intro-line -->
+
 <books>
     <!-- 3 Columns' name -->
     <book>
@@ -12,27 +13,32 @@
         <author> Author </author>
         <publisher>Publisher</publisher>
     </book>
+
     <!-- Books' data -->
     <book page-num="112 pages">
         <name language="en"> Introduction to HTML </name>
         <author> Joseph Gardner </author>
         <publisher>Press &#169;</publisher>
     </book>
+
     <book page-num="99 pages">
         <name language="en">Networking Infrastructure</name>
         <author>Adam Douglas &#38; Janice Dall</author>
         <publisher>Cengage;&#169;</publisher>
     </book>
+
     <book page-num="223 pages">
         <name language="en">Soft Skills in IT</name>
         <author>Mark Hunter</author>
         <publisher>Bolding Publisher&#169;</publisher>
     </book>
+
     <book page-num="80 pages">
         <name language="en">Network Security</name>
         <author>Jennifer Starter &#38; Yuri Adantov</author>
         <publisher>Wrox&#169;</publisher>
     </book>
+
     <book page-num="152 pages">
         <name language="en">XML &#38; JSON</name>
         <author>Stuart Bell</author>
