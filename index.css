@@ -1,0 +1,15 @@
+<!-- Image -->
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+<!-- Table -->
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+<!-- End Styling for the table  -->
+
