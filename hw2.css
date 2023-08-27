@@ -7,6 +7,12 @@ Each book should be presented one below the other
 TIP: remember that to make an inline HTML element to be presented by itself, in its own line, you would use the display: block CSS
 */
 
+books { display: table; }
+book { 
+	display: table-cell; 
+	border: solid 1px;
+}
+
 body {
   background-color: lightgray;
 }
