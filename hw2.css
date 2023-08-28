@@ -10,6 +10,7 @@ books {
   width: 100%;
 }
 
+/* List of Books */
 intro {
   display: table-row;
   text-align: center;
@@ -21,6 +22,7 @@ blank,
 intro-line {
   display: table-cell;
 }
+/* List of Books end */
 
 book {
   display: table-row;
