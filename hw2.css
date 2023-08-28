@@ -55,7 +55,7 @@ book:nth-child(1) {
 */
 
 /* Odd book entries have lightblue bgr */
-book:nth-child(2n + 1) {
+book:nth-child(odd) {
   background-color: lightskyblue;
 }
 
