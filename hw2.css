@@ -2,50 +2,48 @@ body {
   background-color: lightgray;
 }
 
-books { 
-    display:table; 
-    font-size:18px; 
-    margin:8px; 
-    font-family: Georgia, serif; 
-    width: 100%;
-} 
-
-intro { 
-    display:table-row; 
-    text-align:center; 
-    font-family: "Gill Sans", sans-serif;
-    font-size:22px;
-} 
-
-blank, intro-line {
-  display:table-cell;
+books {
+  display: table;
+  font-size: 18px;
+  margin: 8px;
+  font-family: Georgia, serif;
+  width: 100%;
 }
 
-book{ 
-    display:table-row; 
-    border: 1px solid silver; 
-    padding:10px; 
-    background-color: lightgray;
-} 
+intro {
+  display: table-row;
+  text-align: center;
+  font-family: "Gill Sans", sans-serif;
+  font-size: 22px;
+}
 
-book:nth-child(0n + 1) {
-  background-color: lightyellow;
+blank,
+intro-line {
+  display: table-cell;
+}
+
+book {
+  display: table-row;
+  border: 1px solid silver;
+  padding: 10px;
+  background-color: lightgray;
 }
 
 /* 3 Columns' name*/
-
 #first {
-  display:table-row; 
-  text-align:center; 
-  padding:10px; 
+  display: table-row;
+  text-align: center;
+  padding: 10px;
   font-weight: bold;
-  font-size:18px; 
-  margin:8px; 
-  font-family: Georgia, serif; 
+  background-color: lightyellow;
+  font-size: 18px;
+  margin: 8px;
+  font-family: Georgia, serif;
   width: 100%;
 }
+
 /*
-book:nth-child(1) {
+book:nth-child(1) { Why does this doesn't work?
     display:table-cell; 
     text-align:center; 
     border: 2px solid silver;
@@ -55,14 +53,16 @@ book:nth-child(1) {
 */
 
 /* Odd book entries have lightblue bgr */
-book:nth-child(odd) {
+book:nth-child(2n + 1) {
   background-color: lightskyblue;
 }
 
-name, author, publisher{ 
-    display: table-cell; 
-    border: solid 1px; 
-    width: 25%;
+name,
+author,
+publisher {
+  display: table-cell;
+  border: solid 1px;
+  width: 25%;
 }
 
 name {
