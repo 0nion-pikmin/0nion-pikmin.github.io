@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw2.css" ?>
 <!-- Copyright symbol: &#169;
-	 Ampersand: &#38;
+     Ampersand: &#38;
 -->
 <!-- Books are being donated by instructors and publishers -->
 <!--intro-line> List of Books </intro-line -->
 
 <books>
-    <blank> </blank>
-    <intro-line> List of Books </intro-line>
-    <blank> </blank>
+    <intro> 
+        <blank> </blank>
+        <intro-line> List of Books </intro-line>
+        <blank> </blank>
+    </intro>
     
     <!-- 3 Columns' name -->
-    <book>
+    <book id="first">
         <name language="en"> Title </name>
         <author> Author </author>
         <publisher>Publisher</publisher>
