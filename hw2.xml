@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw2.css" ?>
-<resources>
-    <color name="lightgrey">#d3d3d3</color>
-</resources>
 <!-- Copyright symbol: &#169;
      Ampersand: &#38;
 -->
