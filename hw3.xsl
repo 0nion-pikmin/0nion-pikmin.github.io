@@ -9,8 +9,8 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h1>List of Clients</h1>
 
-  <table border="2">
-    <tr bgcolor="#0000ff"> <!-- Blue background -->
+  <table border="2" color="#0000ff"> <!-- Blue border -->
+    <tr bgcolor="#FF9933"> <!-- Orange cells for 4 column headers below -->
       <th>Name</th>
       <th>Phone</th>
       <th>Email</th>
