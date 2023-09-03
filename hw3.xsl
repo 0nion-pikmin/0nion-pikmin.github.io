@@ -9,7 +9,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <body>
   <h1>List of Clients</h1>
 
-  <table border="2" color="#0000ff"> <!-- Blue border -->
+  <table border="3" style="border-color: #0000ff;"> <!-- Thick Blue border -->
     <tr bgcolor="#FF9933"> <!-- Orange cells for 4 column headers below -->
       <th>Name</th>
       <th>Phone</th>
@@ -21,7 +21,22 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       <td><xsl:value-of select="Name"/></td>
       <td><xsl:value-of select="Phone"/></td>
       <td><xsl:value-of select="E-mail"/></td>
-      <td><xsl:value-of select="Account_Total"/></td>
+
+      <td>
+      	<p style="text-align: right">
+	    	<xsl:choose>
+				<xsl:when test="Account_Total &lt;= 80000"> <!-- if total less than (&lt;=) font turns red & bold -->
+					<p style="color: red; font-weight: bold; text-align: right"> <xsl:value-of select='format-number(Account_Total, "$#")' />
+      				</p>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select='format-number(Account_Total, "$#")' />
+				</xsl:otherwise>
+			</xsl:choose>
+      	</p>
+      	
+  	  </td>
+
     </tr>
     </xsl:for-each>
   </table>
