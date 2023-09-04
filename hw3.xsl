@@ -26,11 +26,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
       	<p style="text-align: right">
 	    	<xsl:choose>
 				<xsl:when test="Account_Total &lt;= 80000"> <!-- if total less than (&lt;=) font turns red & bold -->
-					<p style="color: red; font-weight: bold; text-align: right"> <xsl:value-of select='format-number(Account_Total, "$#")' />
+					<p style="color: red; font-weight: bold; text-align: right"> <xsl:value-of select='format-number(Account_Total, "$###,###")' />
       				</p>
 				</xsl:when>
 				<xsl:otherwise>
-					<xsl:value-of select='format-number(Account_Total, "$#")' />
+					<xsl:value-of select='format-number(Account_Total, "$###,###")' />
 				</xsl:otherwise>
 			</xsl:choose>
       	</p>
