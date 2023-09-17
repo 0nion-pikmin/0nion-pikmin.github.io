@@ -34,7 +34,7 @@
                   <xsl:when test="position()=last() - 1">, and </xsl:when>
                   <xsl:otherwise>, </xsl:otherwise>
             </xsl:choose>
-      <xsl:for-each>
+      </xsl:for-each>
    </p>
    <p> <xsl:value-of select="count(Accounts/Client[Years > 7])" /> of our clients are with us for more than 7 years</p> <!-- 4 clients with Years > 7 -->
 
