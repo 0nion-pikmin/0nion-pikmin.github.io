@@ -26,7 +26,7 @@
 
    <!-- Paragraph -->
    <p>We are a very young financial manager company and we are proud of our clients</p>
-   <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(//Client)" /> clients</p> <!-- 8 clients total -->
+   <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(//Client)" /> clients!</p> <!-- 8 clients total -->
    <p>These are our clients: 
       <xsl:for-each select="//Client">
          <xsl:value-of select="Name/First" /><xsl:text> </xsl:text><xsl:value-of
