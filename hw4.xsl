@@ -6,10 +6,9 @@
 
 <html lang="en">
 <head>
-   <meta charset="UTF-8" >
-   <title>Lan Che's HW4<title>
-   <meta name="description" 
-      content="Work with an XML file to apply XPath on it based on the assignment's instructions; CNIT 131A">
+   <meta charset="UTF-8" />
+   <meta name="description" content="Work with an XML file to apply XPath on it based on the assignment's instructions; CNIT 131A" />
+   <title>Lan Che's HW4</title>
    <style>
       <!-- h1 { text-align:center; } -->
    </style>
