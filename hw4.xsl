@@ -9,7 +9,7 @@
    <meta charset="UTF-8" />
    <meta name="description" content="Work with an XML file to apply XPath on it based on the assignment's instructions; CNIT 131A" />
    <title>Lan Che's HW4</title>
-   <style>
+   <style type="text/css">
       .center {
         display: block;
         text-align:center
