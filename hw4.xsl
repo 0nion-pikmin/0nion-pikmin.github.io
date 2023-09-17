@@ -13,7 +13,6 @@
       .center {
         display: block;
         text-align:center;
-        margin: 0 auto;
       }
    </style>
 </head>
@@ -29,8 +28,8 @@
    <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(//Client)" /> clients</p> <!-- 8 clients total -->
    <p>These are our clients: 
       <xsl:for-each select="//Client">
-         <xsl:value-of select="name/first" /><xsl:text> </xsl:text><xsl:value-of
-   select="name/last" />
+         <xsl:value-of select="Name/First" /><xsl:text> </xsl:text><xsl:value-of
+   select="Name/Last" />
          <!--xsl:value-of select="." separator=", "/ -->
 
             <xsl:choose>
