@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="2.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="2.0">
 <xsl:output method="html"/>
 
@@ -6,7 +6,7 @@
 
 <html lang="en">
 <head>
-   <meta charset="UTF-8" />
+   <meta charset="UTF-8" >
    <title>Lan Che's HW4</title>
    <meta name="description" 
       content="Work with an XML file to apply XPath on it based on the assignment's instructions; CNIT 131A">

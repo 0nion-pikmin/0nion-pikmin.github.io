@@ -1,6 +1,6 @@
-<?xml version = "1.0" encoding="UTF-8"?>
+<?xml version = "2.0" encoding="UTF-8"?>
 <!-- Simple XML file with no CSS -->
-<?xml-stylesheet type="text/xsl" href="hw4.xml"?>
+<?xml-stylesheet type="text/xsl" href="hw4.xsl"?>
 <!-- ^Link to hw4.xsl above -->
 <!-- 8 clients total. 4 clients with Years > 7 -->
 
