@@ -23,7 +23,7 @@
 
    <!-- Paragraph -->
    <p>We are a very young financial manager company and we are proud of our clients</p>
-   <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(//Client)" /> clients</p> <!-- 8 clients total -->
+   <p>We have started with 1 client a little bit more than 10 years ago and now we have <xsl:value-of select="count(Accounts/Client)" /> clients</p> <!-- 8 clients total -->
    <p>These are our clients: 
       <xsl:for-each select="/client/name">
          <xsl:value-of select="first" /><xsl:text> </xsl:text><xsl:value-of
@@ -37,7 +37,7 @@
             </xsl:choose>
       <xsl:for-each>
    </p>
-   <p> <xsl:value-of select="count(//Client[Years > 7])" /> of our clients are with us for more than 7 years</p> <!-- 4 clients with Years > 7 -->
+   <p> <xsl:value-of select="count(Accounts/Client[Years > 7])" /> of our clients are with us for more than 7 years</p> <!-- 4 clients with Years > 7 -->
 
 </body>
 </html>
