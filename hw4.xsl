@@ -12,7 +12,8 @@
    <style type="text/css">
       .center {
         display: block;
-        text-align:center
+        text-align:center;
+        margin: 0 auto;
       }
    </style>
 </head>
