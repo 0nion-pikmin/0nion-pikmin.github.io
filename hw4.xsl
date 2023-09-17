@@ -10,7 +10,10 @@
    <meta name="description" content="Work with an XML file to apply XPath on it based on the assignment's instructions; CNIT 131A" />
    <title>Lan Che's HW4</title>
    <style>
-      <!-- h1 { text-align:center; } -->
+      .center {
+        display: block;
+        text-align:center
+      }
    </style>
 </head>
 
@@ -18,7 +21,7 @@
    <h1>ABC Financial Startup</h1>
 
    <!-- Image. Make it center -->
-   <img align="middle" src="financialstartup.jpg" alt="ABC Financial Startup Pic" />
+   <img class="center" src="financialstartup.jpg" alt="ABC Financial Startup Pic" />
 
    <!-- Paragraph -->
    <p>We are a very young financial manager company and we are proud of our clients</p>
