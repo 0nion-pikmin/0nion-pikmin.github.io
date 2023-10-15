@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<xs:annotation>
+  <xs:appinfo>Lan's Note</xs:appinfo>
+  <xs:documentation xml:lang="en">
+  Assignment 6: XML Schema
+  Oct 14, 2023
+  </xs:documentation>
+</xs:annotation>
+
 <xs:element name="Member">
 	<xs:complexType>
 		<xs:sequence>
