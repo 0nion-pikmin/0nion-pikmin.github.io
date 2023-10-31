@@ -1,0 +1,15 @@
+/* Lan Che; HW7: Namespace (CSS file); 10/31/2023 */
+@namespace url(http://www.gov.org/west);
+@namespace east url(http://www.gov.org/east);
+
+state {
+  background-color: lightblue;
+  display: block;
+  margin-bottom: 10px;
+}
+
+east|state {
+  background-color: lightcoral;
+  display: block;
+  margin-bottom: 10px;
+}
