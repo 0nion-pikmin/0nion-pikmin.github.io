@@ -4,7 +4,7 @@
 <states xmlns="http://www.gov.org/west" xmlns:east="http://www.gov.org/east">
   <state>
     <name>California</name>
-	  <capital>Sacramento</capital>
+    <capital>Sacramento</capital>
   </state>
   <state>  
   	<name>Washington</name>
@@ -27,5 +27,4 @@
     <east:name>North Carolina</east:name>
     <east:capital>Raleigh</east:capital>
   </east:state>
-
 </states>
