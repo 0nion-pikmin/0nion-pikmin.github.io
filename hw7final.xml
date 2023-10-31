@@ -1,6 +1,8 @@
-<!-- Lan Che; HW7: Namespace; 10/31/2023 -->
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/css" href="hw7.css"?>
+
+<!-- Lan Che; HW7: Namespace; 10/31/2023 -->
+
 <states xmlns="http://www.gov.org/west" xmlns:east="http://www.gov.org/east">
   <state>
     <name>California</name>
