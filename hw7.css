@@ -2,8 +2,11 @@
 @namespace url(http://www.gov.org/west);
 @namespace east url(http://www.gov.org/east);
 
-state {
+states {
   background-color: #6699ff; /* blue */
+}
+
+state {
   display: block;
 }
 
