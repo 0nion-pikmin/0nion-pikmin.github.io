@@ -3,13 +3,11 @@
 @namespace east url(http://www.gov.org/east);
 
 state {
-  background-color: lightblue;
+  background-color: #6699ff; /* blue */
   display: block;
-  margin-bottom: 10px;
 }
 
 east|state {
-  background-color: lightcoral;
+  background-color: #ff6600; /* orange */
   display: block;
-  margin-bottom: 10px;
 }
