@@ -1,0 +1,120 @@
+1. 
+Uses XPath expressions to navigate through XML documents
+
+XQuery's easy to read and concise syntax means it's simpler to work with and easier to maintain, making it an ideal replacement of complex Java or C++ programs. 
+
+2. 
+hw8.xml:
+<blockquote>
+  <pre>
+    <code>
+        <?xml version="1.0" encoding="UTF-8"?>
+        <bookstore>
+           <book category="coding">
+              <title lang="en">XML is Easy</title>
+              <author>Lucy Smith</author>
+              <price>35.00</price>
+           </book>
+           <book category="children">
+              <title lang="en">Harry Potter</title>
+              <author>J K. Rowling</author>
+              <price>25.00</price>
+           </book>
+           <book category="coding">
+              <title lang="en">XQuery Kick Start</title>
+              <author>James McGovern</author>
+              <author>Per Bothner</author>
+              <author>Kurt Cagle</author>
+              <author>James Linn</author>
+              <author>Vaidyanathan Nagarajan</author>
+              <price>48.99</price>
+           </book>
+           <book category="coding">
+              <title lang="en">Learning HTML</title>
+              <author>Erik Johnson</author>
+              <price>42.00</price>
+            </book>
+           <book category="children">
+              <title lang="en">The Snowy Days</title>
+              <author>Ezra Keats</author>
+              <price>5.89</price>
+            </book>
+        </bookstore>
+    </code>
+  </pre>
+</blockquote>
+
+hw8.xq:
+<blockquote>
+  <pre>
+    <code>
+        xquery version "1.0";
+
+        for $b in
+           doc("hw8.xml")/bookstore/book
+           
+        where 
+           $b/price < 30
+        
+        return $b/title
+    </code>
+  </pre>
+</blockquote>
+
+Summary:
+The provided XQuery code goes through each book entry in hw8.xml, look at each book's price, and then compare said price to see if it's less than 30. If that condition is true, that book entry will be printed out
+
+Detailed explanation:
+<pre>
+  <code>
+    for $b in
+      doc("hw8.xml")/bookstore/book
+  </code>
+</pre>
+
+for $b in: For each book element in 
+doc("hw8.xml"): Open hw8.xml file
+/bookstore/book: XPath that XQuery uses to navigate through hw8.xml file by selecting bookstore element, then all book elements under bookstore
+
+<pre>
+  <code>
+    where 
+      $b/price < 30
+
+    return $b/title
+  </code>
+</pre>
+
+The XQuery code above will extract the price of each book entry in hw8.xml:
+<price>35.00</price>
+<price>25.00</price>
+<price>48.99</price>
+<price>42.00</price>
+<price>5.89</price>
+
+If any of the extracted book's price is less than 30, the book titles that fit the requirement in 
+
+<pre>
+  <code>
+      $b/price < 30
+  </code>
+</pre>
+
+will be printed out
+
+
+Conclusion:
+As the example above (hw8.xq) shows, as long as you know basic coding, you can read XQuery. This is powerful, versable, and beginner-friendly language
+
+(Find way to upload the code of xml & xq file on my html page)
+
+3. XQIB (XQuery-in-the-Browser) is HTML's cousin. Similar to HTML, It can program client-side Web apps, except with XQuery. 
+This is a W3C Standard and works on most modern browsers (Internet Explorer, Firefox, Chrome, Safari). XQIB also doesn't require any plugin installation to run XQuery
+
+
+Source:
+XQuery's doc: https://cs.brown.edu/people/tkraska/pub/techreport07-xqib.pdf
+https://stackoverflow.com/questions/2820453/how-to-display-raw-html-code-on-an-html-page
+https://www.tutorialspoint.com/xquery/xquery_quick_guide.htm
+https://github.com/L2L2L/XQIB-XQuery-in-the-Browser-
+https://www.w3schools.com/xml/xquery_example.asp
