@@ -4,15 +4,14 @@
     <meta charset="UTF-8">
     <meta name="description" content="Lan Che; HW8 - Extra XML; 11/04/2023; Professor Claudia Ferreira Da Silva">
     <title>HW8 - Extra XML</title>
-    <link rel="stylesheet" href="hw8.css">
+    <link rel="stylesheet" type="text/css" href="hw8.css">
   </head>
   <body>
     <main>
         <h1>HW8 - Extra XML</h1>  
 
         <h2>1. What is the main characteristic of XQuery?</h2>  
-        <h3>XQuery is a powerful, W3C-Recommended query language for extract, transform, and generate XML data. To navigate through XML documents, this language uses XPath expressions.</h3>
-        <h3>XQuery's easy to read and concise syntax means it's simpler to work with and easier to maintain, making it an ideal replacement of complex Java or C++ programs</h3>
+        <h3>XQuery is a powerful, W3C-Recommended query language for extract, transform, and generate XML data. To navigate through XML documents, this language uses XPath expressions. Its easy to read and concise syntax means it's simpler to work with and easier to maintain, making XQuery an ideal replacement of complex Java or C++ programs</h3>
         <h3>Compared to XSLT, XQuery is easier to learn, use, and maintain due to its similarity to database query language (e.g. SQL) and its less rigourous syntax rules. XQuery will neither run in Hills (college server) nor locally in your computer because it needs the XQuery machine</h3>
         <h3>Use cases:</h3>
         <ul>
@@ -23,51 +22,10 @@
         </ul>
 
         <h2>2. Look at the XML in hw8.xml file. Look at the code in hw8.xq and based on your research, what is this code doing if applied on the XML of hw8.xml? You will find these files in the zipped folder you downloaded for this course)</h2> 
-        <h3>hw8.xml:</h3>
-        <h3></h3>
-        <h3></h3>
+        <a href="/hw8.xml">hw8.xml:</a>
+        <!-- hw8.xml hyperlink -->
 
-        
-        <blockquote>
-          <pre>
-            <code>
-                <?xml version="1.0" encoding="UTF-8"?>
-                <bookstore>
-                   <book category="coding">
-                      <title lang="en">XML is Easy</title>
-                      <author>Lucy Smith</author>
-                      <price>35.00</price>
-                   </book>
-                   <book category="children">
-                      <title lang="en">Harry Potter</title>
-                      <author>J K. Rowling</author>
-                      <price>25.00</price>
-                   </book>
-                   <book category="coding">
-                      <title lang="en">XQuery Kick Start</title>
-                      <author>James McGovern</author>
-                      <author>Per Bothner</author>
-                      <author>Kurt Cagle</author>
-                      <author>James Linn</author>
-                      <author>Vaidyanathan Nagarajan</author>
-                      <price>48.99</price>
-                   </book>
-                   <book category="coding">
-                      <title lang="en">Learning HTML</title>
-                      <author>Erik Johnson</author>
-                      <price>42.00</price>
-                    </book>
-                   <book category="children">
-                      <title lang="en">The Snowy Days</title>
-                      <author>Ezra Keats</author>
-                      <price>5.89</price>
-                    </book>
-                </bookstore>
-            </code>
-          </pre>
-        </blockquote>
-
-        <h3>hw8.xq:</h3>
+        <h3.thick>hw8.xq:</h3.thick>
         <blockquote>
           <pre>
             <code>
@@ -84,10 +42,10 @@
           </pre>
         </blockquote>
 
-        <h3>Summary:</h3>
+        <h3.thick>Summary:</h3.thick>
         <h3>The provided XQuery code goes through each book entry in hw8.xml, look at each book's price, and then compare said price to see if it's less than 30. If that condition is true, that book entry will be printed out</h3>
         
-        <h3>Detailed explanation:</h3>
+        <h3.thick>Detailed explanation:</h3.thick>
         <pre>
           <code>
             for $b in
@@ -108,16 +66,14 @@
           </code>
         </pre>
         <h3>The XQuery code above will extract the price of each book entry in hw8.xml:</h3>
-        
-        <price>35.00</price>
-        <price>25.00</price>
-        <price>48.99</price>
-        <price>42.00</price>
-        <price>5.89</price>
+        <code><price>35.00</price></code>
+        <code><price>25.00</price></code>
+        <code><price>48.99</price></code>
+        <code><price>42.00</price></code>
+        <code><price>5.89</price></code>
 
         <h3>If any of the extracted book's price is less than 30, the book titles that fit the requirement in</h3>
          
-
         <pre>
           <code>
               $b/price < 30
@@ -127,7 +83,7 @@
         <h3>will be printed out</h3>
         
 
-        <h3>Conclusion:</h3>
+        <h3.thick>Conclusion:</h3.thick>
         <h3>As the example above (hw8.xq) shows, as long as you know basic coding, you can read XQuery. This is powerful, versable, and beginner-friendly language</h3>
         
 

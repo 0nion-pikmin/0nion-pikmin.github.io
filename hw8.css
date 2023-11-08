@@ -9,3 +9,9 @@ h2 {
 h3 {
   font-weight: normal;
 }
+
+/* h3, but bold and different color*/
+h3.thick {
+  font-weight: bold;
+  color: ##660000; /* dark red */
+}
