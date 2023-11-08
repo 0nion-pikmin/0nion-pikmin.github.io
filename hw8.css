@@ -13,5 +13,5 @@ h3 {
 /* h3, but bold and different color*/
 h3.thick {
   font-weight: bold;
-  color: ##660000; /* dark red */
+  color: #660000; /* dark red */
 }
