@@ -2,10 +2,10 @@ body {
   background-color: #6699FF; /* light blue */
 }
 
-.h2 {
+h2 {
   color: ##660000; /* dark red */
 }
 
-.h3 {
+h3 {
   font-weight: normal;
 }
