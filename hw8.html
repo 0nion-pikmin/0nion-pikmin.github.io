@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Lan Che; HW8 - Extra XML; 11/04/2023; Professor Claudia Ferreira Da Silva">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW8 - Extra XML</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <main>
+        <h1>HW8 - Extra XML</h1>  
+
+        <h2>1. What is the main characteristic of XQuery?</h2>  
+        <h3>XQuery is a powerful, W3C-Recommended query language for extract, transform, and generate XML data. To navigate through XML documents, this language uses XPath expressions.</h3>
+        <h3>XQuery's easy to read and concise syntax means it's simpler to work with and easier to maintain, making it an ideal replacement of complex Java or C++ programs</h3>
+        <h3>Compared to XSLT, XQuery is easier to learn, use, and maintain due to its similarity to database query language (e.g. SQL) and its less rigourous syntax rules. XQuery will neither run in Hills (college server) nor locally in your computer because it needs the XQuery machine</h3>
+        <h3>Use cases:</h3>
+        <ul>
+          <li>Extract information to use in a Web Service</li>
+          <li>Generate summary reports</li>
+          <li>Transform XML data to XHTML</li>
+          <li>Search Web documents for relevant information</li>
+        </ul>
+
+        <h2>2. Look at the XML in hw8.xml file. Look at the code in hw8.xq and based on your research, what is this code doing if applied on the XML of hw8.xml? You will find these files in the zipped folder you downloaded for this course)</h2> 
+        <h3>hw8.xml:</h3>
+        <h3></h3>
+        <h3></h3>
+
+        
+        <blockquote>
+          <pre>
+            <code>
+                <?xml version="1.0" encoding="UTF-8"?>
+                <bookstore>
+                   <book category="coding">
+                      <title lang="en">XML is Easy</title>
+                      <author>Lucy Smith</author>
+                      <price>35.00</price>
+                   </book>
+                   <book category="children">
+                      <title lang="en">Harry Potter</title>
+                      <author>J K. Rowling</author>
+                      <price>25.00</price>
+                   </book>
+                   <book category="coding">
+                      <title lang="en">XQuery Kick Start</title>
+                      <author>James McGovern</author>
+                      <author>Per Bothner</author>
+                      <author>Kurt Cagle</author>
+                      <author>James Linn</author>
+                      <author>Vaidyanathan Nagarajan</author>
+                      <price>48.99</price>
+                   </book>
+                   <book category="coding">
+                      <title lang="en">Learning HTML</title>
+                      <author>Erik Johnson</author>
+                      <price>42.00</price>
+                    </book>
+                   <book category="children">
+                      <title lang="en">The Snowy Days</title>
+                      <author>Ezra Keats</author>
+                      <price>5.89</price>
+                    </book>
+                </bookstore>
+            </code>
+          </pre>
+        </blockquote>
+
+        <h3>hw8.xq:</h3>
+        <blockquote>
+          <pre>
+            <code>
+                xquery version "1.0";
+
+                for $b in
+                   doc("hw8.xml")/bookstore/book
+                   
+                where 
+                   $b/price < 30
+                
+                return $b/title
+            </code>
+          </pre>
+        </blockquote>
+
+        <h3>Summary:</h3>
+        <h3>The provided XQuery code goes through each book entry in hw8.xml, look at each book's price, and then compare said price to see if it's less than 30. If that condition is true, that book entry will be printed out</h3>
+        
+        <h3>Detailed explanation:</h3>
+        <pre>
+          <code>
+            for $b in
+              doc("hw8.xml")/bookstore/book
+          </code>
+        </pre>
+
+        <h3>for $b in: For each book element in </h3>
+        <h3>doc("hw8.xml"): Open hw8.xml file</h3>
+        <h3>/bookstore/book: XPath that XQuery uses to navigate through hw8.xml file by selecting bookstore element, then all book elements under bookstore</h3>
+
+        <pre>
+          <code>
+            where 
+              $b/price < 30
+
+            return $b/title
+          </code>
+        </pre>
+        <h3>The XQuery code above will extract the price of each book entry in hw8.xml:</h3>
+        
+        <price>35.00</price>
+        <price>25.00</price>
+        <price>48.99</price>
+        <price>42.00</price>
+        <price>5.89</price>
+
+        <h3>If any of the extracted book's price is less than 30, the book titles that fit the requirement in</h3>
+         
+
+        <pre>
+          <code>
+              $b/price < 30
+          </code>
+        </pre>
+
+        <h3>will be printed out</h3>
+        
+
+        <h3>Conclusion:</h3>
+        <h3>As the example above (hw8.xq) shows, as long as you know basic coding, you can read XQuery. This is powerful, versable, and beginner-friendly language</h3>
+        
+
+        <h2>3. Do a brief research and explain what is XQIB and how it can be used with XQuery?</h2> 
+        <h3>XQIB (XQuery-in-the-Browser) is HTML's cousin. Similar to HTML, It can program client-side Web apps, except with XQuery. This is a W3C Standard and works on most modern browsers (Internet Explorer, Firefox, Chrome, Safari). XQIB also doesn't require any plugin installation to run XQuery</h3> 
+
+        <h2>Reference:</h2> 
+        <h3>https://en.wikipedia.org/wiki/XQuery</h3>
+        <h3>XQuery's documentation from Brown: https://cs.brown.edu/people/tkraska/pub/techreport07-xqib.pdf</h3>
+        <h3>https://stackoverflow.com/questions/2820453/how-to-display-raw-html-code-on-an-html-page</h3>
+        <h3>https://www.tutorialspoint.com/xquery/xquery_quick_guide.htm</h3>
+        <h3>https://github.com/L2L2L/XQIB-XQuery-in-the-Browser-</h3>
+        <h3>https://www.w3schools.com/xml/xquery_example.asp</h3>
+
+    </main>
+	<script src="index.js"></script>
+  </body>
+</html>
+
+
+
+
