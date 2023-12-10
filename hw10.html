@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="CNIT 131A, HW10 - JSON, Dec 9, 2023">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HW10 Webpage</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body style="background-color: lightgray;">
+    <h1>Question:</h1>
+    <p> Suppose you have the following code in JavaScript (recognize the data being passed to the variable in JSON format) - the var statement is just to declare the variable called friends </p>
+
+    <!-- Code copied from HW10 Assignment in Canvas -->
+    <span style="font-family: 'courier new', courier, monospace;">
+   var friends = [{</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"name": "John",</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"age": "28",</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"gender": "male",</span><br><span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"profession": "sales rep"</span><br><span style="font-family: 'courier new', courier, monospace;">},</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">{</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"name": "Maryenne",</span><br><span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"age": "26",</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"gender": "female",</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"profession": "web developer"</span><br>
+    <span style="font-family: 'courier new', courier, monospace;">}
+    <span style="line-height: 1.4;">];<br> </span>
+    </span>
+    <!-- Code copied from HW10 Assignment in Canvas END -->
+
+    <p> Then, later in the program, that variable friends (that looks like an array, right?) is used to write some data in a table<br>
+    So, if you see the following command in this same JavaScript code, that is referring to the above JSON structure, what will be the content of the variable tablecell1? <br>
+    NOTICE THAT YOU SHOULD WRITE THE WHOLE CONTENT OF THE VARIABLE tablecell1, which, of course, will include the HTML tags to form a table row you see below. Remember, the var statement is only declaring the tablecell1 variable!</p>
+
+    <!-- Code -->
+    <span style="line-height: 1.4; font-family: 'courier new', courier, monospace;">var tablecell1 = '&lt;tr&gt;&lt;td&gt;' + friends[0].name + '&lt;/td&gt;&lt;td&gt;' + friends[0].profession + '&lt;/td&gt;&lt;/tr&gt;'</span>
+	  <!-- Code END -->
+
+    <h1>Answer:</h1>
+    <p> Short answer for the content of the variable tablecell1:</p>
+    <h2> tablecell1 is a HTML table that has 2 cells, "John" and "sales rep", with John being the name in friends' first entry (friends[0].name) and "sales rep" being the profession in friends' first entry (friends[0].profession)</h2>
+    
+    <tr>
+        <td>John</td>
+        <td>sales rep</td>
+    </tr>
+
+  </body>
+</html>
