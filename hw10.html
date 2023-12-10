@@ -9,12 +9,12 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body style="background-color: lightgray;">
-    <h1>Question:</h1>
+    <!-- Part 1: Content inside variable tablecell1 -->
+    <h1>Part 1's Question:</h1>
     <p> Suppose you have the following code in JavaScript (recognize the data being passed to the variable in JSON format) - the var statement is just to declare the variable called friends </p>
 
     <!-- Code copied from HW10 Assignment in Canvas -->
-    <span style="font-family: 'courier new', courier, monospace;">
-   var friends = [{</span><br>
+    <span style="font-family: 'courier new', courier, monospace;"> var friends = [{</span><br>
     <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"name": "John",</span><br>
     <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"age": "28",</span><br>
     <span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"gender": "male",</span><br><span style="font-family: 'courier new', courier, monospace;">&nbsp; &nbsp; &nbsp;"profession": "sales rep"</span><br><span style="font-family: 'courier new', courier, monospace;">},</span><br>
@@ -36,13 +36,25 @@
 	  <!-- Code END -->
 
     <h1>Answer:</h1>
-    <p> Short answer for the content of the variable tablecell1:</p>
+    <p> Explanation for the content of the variable tablecell1:</p>
     <h2> tablecell1 is a HTML table that has 2 cells, "John" and "sales rep", with John being the name in friends' first entry (friends[0].name) and "sales rep" being the profession in friends' first entry (friends[0].profession)</h2>
-    
+
+    <p> The string inside the variable tablecell1:</p>
+    <h2> 
+      <code>
+        <tr><td>John</td><td>sales rep</td></tr>
+      </code>
+    </h2>
+
+    <p> tablecell1 in HTML format</p>
     <tr>
         <td>John</td>
         <td>sales rep</td>
     </tr>
+
+    <!-- Part 2: XML to JSON conversion -->
+    <p> Part 2: XML to JSON conversion </p>
+    <h2> Link to the <a href="hw10.json">hw10.json file</a> created from the given <a href="hw10.xml">hw10.xml file</a></h2>
 
   </body>
 </html>
